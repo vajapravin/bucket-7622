@@ -1,0 +1,14 @@
+[
+  {
+    "name": "abcd",
+    "password": "1234",
+    "timezone": "IndianStandardTime(+5:30GMT)",
+    "role": "supervisor"
+  },
+  {
+    "name": "xyz",
+    "password": "4321",
+    "timezone": "PacificStandardTime(-7GMT)",
+    "role": "user"
+  }
+]

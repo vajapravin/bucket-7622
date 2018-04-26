@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"invalid_creds" : "Username and password are not valid!",
+		"invalid_params" : "Invalid Params!",
+		"invalid_uuid" : "Invalid UUID!",
+		"appointment_removed" : "Appointment has been removed successfully."
+	}
+}

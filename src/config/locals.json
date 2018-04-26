@@ -1,0 +1,16 @@
+{
+  "user": {
+    "login": {
+      "success": "You have successfully login!",
+      "error": "Something went wrong! Please try again later!"
+    },
+    "register": {
+      "success": "Account has been created successfully. Please check email to confirm!",
+      "error": "Something went wrong! Please try again later!"
+    },
+    "password": {
+      "success": "We have sent reset password link to your registered email.",
+      "error": "Something went wrong! Please try again later!"
+    }
+  }
+}

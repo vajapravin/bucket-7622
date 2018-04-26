@@ -1,0 +1,38 @@
+<div class="all-wrapper menu-side with-side-panel">
+  <div class="layout-w">
+    <div class="content-w">
+      <div class="vr-breadcrumb"></div>
+      <div class="content-i">
+        <div class="content-box">
+          <div class="element-wrapper">
+            <h6 class="element-header">
+              <a [routerLink]="['/appointments']">Appointments</a> > New Appointment
+            </h6>
+            <div class="element-box">
+              <form (ngSubmit)="saveAppointment()">
+                <h5 class="form-header">
+                  Schedule a new appointment
+                </h5>
+                <div class="form-desc">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                </div>
+                <div class="form-group">
+                  <label for=""> Title *</label><input class="form-control" placeholder="Enter title" type="text" [(ngModel)]="appointment.title" name="title" required="true">
+                </div>
+                <div class="form-group">
+                  <label for=""> Time *</label><input class="form-control" placeholder="Enter time" type="text" [(ngModel)]="appointment.time" name="time" required="true">
+                </div>
+                <div class="form-group">
+                  <label for=""> Agenda *</label><textarea class="form-control" [(ngModel)]="appointment.agenda" name="agenda" required="true"></textarea>
+                </div>
+                <div class="form-buttons-w">
+                  <button class="btn btn-primary" type="submit"> Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

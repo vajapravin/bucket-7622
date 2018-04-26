@@ -1,0 +1,38 @@
+vr-quickdetail {
+  opacity: 1;
+  position: absolute;
+  top: 65px;
+  border-left: 1px solid #d7d7d7;
+  overflow: hidden;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  left: 0;
+  height: 80%;
+  background: white;
+  z-index: 1;
+  box-shadow: inset 1px -3px 3px rgba(0,0,0,.1), 2px 2px 5px rgba(0,0,0,.1);
+  transform: translate3d(-570px,0,0);
+  -webkit-transform: translate3d(-570px,0,0);
+}
+
+vr-quickdetail.active {
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(300,0,0);
+}
+
+.quickdetail-container, .sidenav-container {
+  overflow-y: hidden !important;
+}
+
+.quickdetail .mat-tab-body-wrapper {
+  height: 100%;
+}
+
+.quickdetail .mat-tab-labels {
+  .mat-tab-label {
+    flex: 1;
+  }
+}

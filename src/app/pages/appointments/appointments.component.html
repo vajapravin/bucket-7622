@@ -1,0 +1,43 @@
+<div class="all-wrapper menu-side with-side-panel">
+  <div class="layout-w">
+    <div class="content-w">
+      <div class="vr-breadcrumb"></div>
+      <div class="content-i">
+        <div class="content-box">
+          <div class="element-wrapper">
+            <h6 class="element-header">
+              Hi, {{localStorage.getItem('auth')}} <button class="btn btn-primary btn-sm" (click)="logout()" style="float:right;">Logout</button>
+            </h6>
+            <div class="element-box">
+              <h5 class="form-header">
+                List of appointments 
+                <a class="btn btn-primary btn-sm" [routerLink]="['new']" *ngIf="authService.supervisorLogin()">Add</a>
+              </h5>
+              <div class="form-desc">Appointment Scheduler: </div>
+              <div class="table-responsive">
+                <table class="table table-lightborder">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Time</th>
+                      <th>Agenda</th>
+                      <th class="text-center" *ngIf="authService.supervisorLogin()">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngIf="this.appointments != []">
+                    <tr *ngFor="let appointment of this.appointments">
+                      <td>{{appointment['title']}}</td>
+                      <td>{{appointment['time']}}</td>
+                      <td>{{appointment['agenda']}}</td>
+                      <td class="text-center" *ngIf="authService.supervisorLogin()"><button (click)="this.deleteAppointment(appointment['uuid'])" class="btn btn-primary btn-sm">Remove</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
